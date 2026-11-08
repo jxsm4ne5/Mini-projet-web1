@@ -1,0 +1,560 @@
+:root {
+/* Couleurs principales & Thème */
+--primary-color: #007bff; /* Bleu principal(Boutons,Liens au survol, bordures)*/
+--primary-hover: #0056b3; /* Bleu foncé (Effet survol bouton/lien) */
+--dark-header: #1a252f; /* Fond En-tête, Pied de page, Titre tableau */
+--dark-nav: #2c3e50; /* Fond des boutons du menu de navigation */
+--dark-sub-header: #34495e; /* Sous-titres du tableau des horaires */
+/* Couleurs de fond */
+--bg-body: #f4f6f9; /* Fond général de la page */
+--bg-card: #ffffff; /* Fond des cartes / conteneurs */
+--bg-search: #e9ecef; /* Fond de la barre de recherche */
+--bg-placeholder: #e2e8f0; /* Fond des emplacements d'images */
+/* Couleurs de texte */
+--text-primary: #333333; /* Couleur de texte principal */
+--text-muted: #4a5568; /* Texte de définition / secondaire */
+--text-light: #ffffff; /* Texte clair sur fond sombre */
+--text-placeholder: #64748b; /* Texte des images d'illustration */
+--text-price: #d9534f; /* Rouge pour l'affichage des prix */
+/* Couleurs de bordures */
+--border-color: #dddddd; /* Bordures des cartes */
+--border-table: #cccccc; /* Bordures des tableaux */
+--border-placeholder: #cbd5e1;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-weight: bold;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding:11px;
+    background-color: var(--dark-nav);
+    color: var(--text-light);
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: var(--dark-header);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+}
+header div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+header div span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color:var(--primary-color);
+    color: var(--text-light);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+header h1 {
+    font-size: 40px;
+    letter-spacing: 0.04em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+footer {
+    width: 100%;
+    background: var(--dark-header);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+/*index.html*/
+
+main {
+            width: 100%;
+            height:800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+}
+        main >section{
+            margin-bottom: 40px;
+            width:50%;
+            
+        }
+        
+
+        main h2 {
+            font-size: 1.6rem;
+            color: var(--dark-header);
+            margin-bottom: 12px;
+             border-bottom:2px solid var(--primary-color);
+        }
+
+        main > div > p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        main  {
+            display: flex;
+            gap: 50px;           
+            align-items: flex-start;
+            justify-content: space-around;
+
+        }
+
+        main ul {
+            list-style-type: square;  
+        }
+
+        main li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+  
+        main ul ul {
+            list-style-type: circle;  
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        main ul ul li {
+            font-size: 0.9rem;
+        }
+
+      
+        main ul ul ul {
+            list-style-type: disc; 
+        }
+
+
+        main >aside , main>section>div,main>section>article {
+            flex: 1;
+            background-color:var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 25px;
+            box-shadow: 0 2px 5px var(--border-color);
+            margin-bottom: 20px;
+        }
+
+
+      
+        main aside form div {
+            display: flex;
+            flex-direction: column;   
+            margin-bottom: 15px;
+        }
+
+        main aside form label {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color:var(--dark-header);
+            margin-bottom: 6px;
+        }
+
+        
+        main aside form input {
+            width: 100%;
+            padding: 10px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background-color: var(--bg-input);
+            transition: border-color 0.2s;
+        }
+
+        main aside form input:focus {
+            border-color: var(--primary-color);    
+            outline: none;
+        }
+
+        /* Bouton "Se connecter" */
+        main aside form button {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            font-size: 0.95rem;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+
+        main aside form button:hover {
+            background-color: var(--primary-color-dark); 
+        }
+
+        
+        main aside > p {
+            font-size: 0.85rem;
+            color: var(--text-color);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        main aside > p a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main aside > p a:hover {
+            text-decoration: underline;
+        }
+
+
+
+/*Pc*/
+#catalogue {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--border-color);
+}
+
+h2 {
+    width: 100%;
+    color: var(--dark-header);
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+#catalogue{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+#form {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    background-color: var(--bg-body);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    height: 100px;
+    grid-column: 1 / -1; 
+}
+
+#form div {
+    margin-bottom: 15px;
+    width:100%;
+}
+
+#form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-muted);
+}
+
+#form input[type="text"], #form select {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-card);
+    box-sizing: border-box;
+}
+
+#form input[type="button"]{
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form input[type="button"]:hover {
+    background-color: var(--primary-hover);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-card);
+    grid-column: 1/-1
+}
+
+th, td {
+    border: 1px solid var(--border-table);
+    padding: 12px;
+    text-align:center;
+}
+
+th {
+    background-color: var(--dark-header);
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+
+
+.list {
+    text-align: left;
+    padding-left: 0px;
+}
+
+td img {
+    width: 150px;
+    height:150px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+td:last-child {
+    color: var(--text-price);
+    font-weight: bold;
+}
+
+
+td ul {
+    list-style-type: none; 
+}
+
+td li {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+
+
+/*inscription.html*/
+#section {
+    width:70%;
+    margin: 40px auto;
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--border-color);
+}
+
+h2 {
+    color: var(--dark-header);
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#form2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#form2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#form2 label {
+    font-weight: bold;
+    color: var(--dark-sub-header);
+    font-size: 14px;
+}
+
+#nom, #prenom, #nais, #adr, #cp, #ville, #gov, #func, #mail, #tel, #rem {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-body);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+#radio-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#radio-container label {
+    font-weight: normal;
+}
+
+#submit-btn {
+    grid-column: 1;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#submit-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+/*infos.html*/
+
+
+#section2 ,#section3,#section-horaires{
+    width: 100%;
+    margin: 30px auto;
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Suppression de hr et remplacement par bordure CSS sur h2 */
+#section2 h2 {
+    color: var(--dark-header);
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- Style du Glossaire Technique (dl, dt, dd) --- */
+
+dl {
+    margin: 20px 0 0 0;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 15px;
+    font-size: 15px;
+}
+dt::before{
+    content:"|";
+    color:var(--primary-color);
+    margin-right: 5px;
+}
+
+dd {
+    margin-left: 0;
+    margin-top: 5px;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* --- Style du Tableau des Horaires --- */
+#section-horaires table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color:var(--bg-card);
+}
+
+#section-horaires th, 
+#section-horaires td {
+    border: 1px solid var(--border-table);
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* En-tête principal en bleu foncé */
+#section-horaires th {
+    background-color: var(--dark-header);
+    color: var(--text-light);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+/* Style des cellules de gauche fusionnées (Été / Hiver) */
+#cell-ete, #cell-hiver {
+    background-color: var(--text-muted);
+    color: var(--text-light);
+    font-weight: bold;
+    width: 150px;
+}
+
+/* Style de la cellule Ramadan fusionnée */
+#cell-ramadan {
+    background-color: var(--dark-sub-header);
+    color: var(--text-light);
+    font-weight: bold;
+    width: 180px;
+}
+
+/* Coloration douce pour les jours */
+#section-horaires tbody tr td:nth-child(2) {
+    font-weight: bold;
+    background-color: var(--bg-card);
+}
+#section-horaires tr td:last-child{
+    color: var(--dark-header);
+}
+
+@media (max-width:650px) {
+    header{
+        flex-direction:column;
+    }
+    main{
+        flex-direction: column;
+    }
+    main section , main aside,main article{
+        width: 100%;
+    }
+    #form{
+        flex-direction:column;
+        height: 200px;
+    }
+    #form2{
+        display:block;
+    }
+    #section-horaires,#section2,#section3{
+        width: 90%;
+    }
+}
