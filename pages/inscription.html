@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <section id="section">
+        <form action="#" method="post" id="form2">
+             <div>
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" id="nom" required>
+             </div>
+             <div>
+                <label for="prenom">Prénom:</label>
+                <input type="text" name="prenom" id="prenom" required >
+             </div>
+             <div>
+                <label for="nais">Date de naissance:</label>
+                <input type="date" name="nais" id="nais" required >
+             </div>
+             <div id="radio-container" required>
+                <label for="Sexe">Sexe:</label>
+                <label for="sexe"><input type="radio" name="sexe" id="m">Masculin</label>
+                <label for="sexe"><input type="radio" name="sexe" id="f">Féminin</label>
+             </div>
+             <div>
+                <label for="adresse">Adresse:</label>
+                <input type="text" name="adr" id="adr" required>
+             </div>
+             <div>
+                <label for="code_postal">Code postal:</label>
+                <input type="text" name="cp" id="cp" required>
+             </div>
+             <div>
+                <label for="ville">Ville:</label>
+                <input type="text" name="ville" id="ville" required>
+             </div>
+             <div>
+                <label for="gov">Gouvernorat:</label>
+                <select name="gov" id="gov" required>
+                    <option value="0">--Choisir un gouvernorat--</option>
+                    <option value="ariana">Ariana</option>
+                    <option value="tunis">Tunis</option>
+                    <option value="sousse">Sousse</option>
+                    <option value="sfax">Sfax</option>
+                    <option value="gabes">Gabès</option>
+                    <option value="autres">Autres</option>
+                </select>
+             </div>
+             <div>
+                <label for="func">Function:</label>
+                <input type="text" name="func" id="func">
+             </div>
+             <div>
+                <label for="mail">Adresse E-mail:</label>
+                <input type="email" name="mail" id="mail" required>
+             </div>
+             <div>
+                <label for="tel">Téléphone:</label>
+                <input type="tel" name="tel" id="tel" required>
+             </div>
+             <div>
+                <label for="rem">Remarques:</label>
+                <textarea name="rem" id="rem" cols="30" rows="10"></textarea>
+             </div>
+             <input type="submit" value="Valider l'inscription" class="btn" id="submit-btn">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pc</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <section id="catalogue">
+        <h2>Catalogue des ordinateurs</h2>
+    
+        <form method="post" id="form">
+            <div>
+                <label for="Rech">Recherche par mot-clé:</label>
+                <input type="text" name="Rech" id="Rech" placeholder="Ex: Gaming,Intel,Lenovo...">
+            </div>
+            <div>
+                <label for="pr">Trier par prix</label>
+                <select name="pr" id="pr">
+                    <option value="0">Prix croissant</option>
+                    <option value="1">Prix décroissant</option>
+                </select>
+            </div>
+            <div><input type="button" value="Filter" class="btn"></div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Référence</th>
+                    <th>Photo</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>REF-PC001</td>
+                    <td><img src="../images/img1.webp" alt="" class="img"></td>
+                    <td class="list"><ul>
+                        <li>Modéle:Lenovo Thinkpad E16</li>
+                        <li>Processeur: Intel Core Ultra 7</li>
+                        <li>Mémoire Ram: 16 Go DDR5</li>
+                        <li>Stockage: 512 Go SSD NVMe</li>
+                        <li>Ecran: 16 pouces FHD+</li>
+                    </ul></td>
+                    <td>2450 TND</td>
+                </tr>
+                <tr>
+                    <td>REF-PC002</td>
+                    <td><img src="../images/img2.webp" alt="" class="img"></td>
+                    <td class="list"><ul>
+                        <li>Modéle:Asus ROG Strix
+                        </li>
+                        <li>Processeur: AMD Ryzen 7 773HS</li>
+                        <li>Carte Graphique: NVIDIA RTX 4060 8GO</li>
+                        <li>Mémoire Ram: 32 Go DDR5</li>
+                        <li>Stockage: 1TO SSD NVMe</li> </ul></td>
+                    <td>3890 TND</td>
+                </tr>
+                <tr>
+                    <td>REF-PC003</td>
+                    <td><img src="../images/img3.webp" alt="" class="img"></td>
+                    <td class="list"><ul>
+                        <li>Modéle:HP ProDesk 400 G9</li>
+                        <li>Processeur: Intel Core i5-13500</li>
+                        <li>Mémoire Ram: 8 Go DDR5</li>
+                        <li>Stockage: 256 Go SSD</li>
+                        <li>Inclus: Clavier + Souris filaires</li>
+                    </ul></td>
+                    <td>1620 TND</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
